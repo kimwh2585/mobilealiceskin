@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 휴대폰에서 PC의 사이즈가 그대로 유지되도록 하기 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>김원희 포트폴리오</title>
+    <!-- 제이쿼리 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- 슬릭 슬라이더 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <link rel="stylesheet" href="./common.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+
+
+</head>
+
+<body>
+
+    <!-- 팝업 -->
+    <div class="popup-1 flex flex-ai-c flex-jc-c">
+        <div class="box">
+            <div class="body">
+                <div class="img-box">
+                    <img src="./img/20200601013830popup_200601.jpg" alt="">
+                </div>
+            </div>
+            <div class="footer flex flex-jc-sb">
+                <a class="btn-close-for-a-while">
+                    <i class="fas fa-window-close"></i>
+                    오늘 하루 이 창을 띄우지 않음
+                </a>
+
+                <a class="btn-close">
+                    닫기
+                    <i class="fas fa-times"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 사이드 바 시작 -->
+    <div class="side-bar-bg"></div>
+    <div class="side-bar flex flex-column-nowrap">
+        <div class="head">
+            <div class="logo-bar flex flex-jc-sb flex-ai-c">
+                <a href="#" class="logo block img-box">
+                    <img src="./img/menu_logo.jpg" alt="">
+                </a>
+                <a class="btn-hide-side-bar block">
+                    <img class="block" src="./img/all_menu_close.jpg" alt="">
+                </a>
+            </div>
+            <div class="menu-bar">
+                <ul class="flex">
+                    <li class="flex-1-0-0"><a href="" class="img-box"><img src="./img/rq_icon1.jpg" alt=""></a></li>
+                    <li class="flex-1-0-0"><a href="" class="img-box"><img src="./img/rq_icon2.jpg" alt=""></a></li>
+                    <li class="flex-1-0-0"><a href="" class="img-box"><img src="./img/rq_icon3.jpg" alt=""></a></li>
+                    <li class="flex-1-0-0"><a href="" class="img-box"><img src="./img/rq_icon4.jpg" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="body flex-grow-1">
+            <ul>
+                <li>
+                    <a>앨리스소개</a>
+                    <ul class="flex flex-row-wrap">
+                        <li><a href="#">병원소개</a></li>
+                        <li><a href="#">의료진소개</a></li>
+                        <li><a href="#">진료시간</a></li>
+                        <li><a href="#">장비소개</a></li>
+                        <li><a href="#">둘러보기</a></li>
+                        <li><a href="#">오시는길</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a>눈성형</a>
+                    <ul class="flex flex-row-wrap">
+                        <li><a href="#">쌍꺼풀</a></li>
+                        <li><a href="#">눈매교정</a></li>
+                        <li><a href="#">트임</a></li>
+                        <li><a href="#">눈밑지방</a></li>
+                        <li><a href="#">상/하안검</a></li>
+                        <li><a href="#">재수술</a></li>
+                        <li><a href="#">전·후 주의사항</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a>코성형</a>
+                    <ul class="flex flex-row-wrap">
+                        <li><a href="#">콧대</a></li>
+                        <li><a href="#">코끝</a></li>
+                        <li><a href="#">매부리코</a></li>
+                        <li><a href="#">복코</a></li>
+                        <li><a href="#">절골술</a></li>
+                        <li><a href="#">재수술</a></li>
+                        <li><a href="#">전·후 주의사항</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a>가슴성형</a>
+                    <ul class="flex flex-row-wrap">
+                        <li><a href="#">가슴확대</a></li>
+                        <li><a href="#">가슴축소</a></li>
+                        <li><a href="#">가슴지방이식</a></li>
+                        <li><a href="#">유두성형</a></li>
+                        <li><a href="#">전·후 주의사항</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a>동안/리프팅</a>
+                    <ul class="flex flex-row-wrap">
+                        <li><a href="#">안면거상</a></li>
+                        <li><a href="#">이마거상</a></li>
+                        <li><a href="#">눈썹거상</a></li>
+                        <li><a href="#">눈밑지방</a></li>
+                        <li><a href="#">상/하안검</a></li>
+                        <li><a href="#">울쎄라리프팅</a></li>
+                        <li><a href="#">더블로리프팅</a></li>
+                        <li><a href="#">실리프팅</a></li>
+                        <li><a href="#">전·후 주의사항</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a>바디라인</a>
+                    <ul class="flex flex-row-wrap">
+                        <li><a href="#">쿨쉐이핑</a></li>
+                        <li><a href="#">미쿨</a></li>
+                        <li><a href="#">비만약처방</a></li>
+                        <li><a href="#">고주파</a></li>
+                        <li><a href="#">지방분해주사</a></li>
+                        <li><a href="#">걸그룹주사</a></li>
+                        <li><a href="#">LLD</a></li>
+                        <li><a href="#">카복시</a></li>
+                        <li><a href="#">바디보톡스</a></li>
+                        <li><a href="#">전·후 주의사항</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a>쁘띠성형</a>
+                    <ul class="flex flex-row-wrap">
+                        <li><a href="#">보톡스</a></li>
+                        <li><a href="#">필러</a></li>
+                        <li><a href="#">윤곽주사</a></li>
+                        <li><a href="#">더마톡신/물광주사</a></li>
+                        <li><a href="#">보조개</a></li>
+                        <li><a href="#">팔자주름</a></li>
+                        <li><a href="#">입술축소</a></li>
+                        <li><a href="#">턱/이마성형</a></li>
+                        <li><a href="#">입술성형</a></li>
+                        <li><a href="#">전·후 주의사항</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a>지방성형</a>
+                    <ul class="flex flex-row-wrap">
+                        <li><a href="#">얼굴지방이식</a></li>
+                        <li><a href="#">가슴지방이식</a></li>
+                        <li><a href="#">얼굴지방흡입</a></li>
+                        <li><a href="#">바디지방흡입</a></li>
+                        <li><a href="#">미니지방흡입</a></li>
+                        <li><a href="#">전·후 주의사항</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a>피부과</a>
+                    <ul class="flex flex-row-wrap">
+                        <li><a href="#">모공/흉터관리</a></li>
+                        <li><a href="#">기미/색소/미백</a></li>
+                        <li><a href="#">혈관/홍조</a></li>
+                        <li><a href="#">점,비립종</a></li>
+                        <li><a href="#">리프팅/탄력</a></li>
+                        <li><a href="#">레이저제모</a></li>
+                        <li><a href="#">전·후 주의사항</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a>메디컬스킨케어</a>
+                    <ul class="flex flex-row-wrap">
+                        <li><a href="#">여드름</a></li>
+                        <li><a href="#">미백관리</a></li>
+                        <li><a href="#">아쿠아필</a></li>
+                        <li><a href="#">알라딘필</a></li>
+                        <li><a href="#">밀크필</a></li>
+                        <li><a href="#">MTS</a></li>
+                        <li><a href="#">주사요법</a></li>
+                        <li><a href="#">전·후 주의사항</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a>상담/예약</a>
+                    <ul class="flex flex-row-wrap">
+                        <li><a href="#">온라인상담</a></li>
+                        <li><a href="#">카카오톡상담</a></li>
+                        <li><a href="#">온라인예약</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a>커뮤니티</a>
+                    <ul class="flex flex-row-wrap">
+                        <li><a href="#">전후사진</a></li>
+                        <li><a href="#">수술후기</a></li>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">이벤트</a></li>
+                        <li><a href="#">모델모집</a></li>
+                        <li><a href="#">리얼스토리</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 사이드 바 끝 -->
+
+    <!-- 빠른상담바 -->
+    <div class="fast-inquiry-bar">
+        <div class="head relative">
+            <div class="btn-toggle absolute-center absolute-bottom">
+                빠른문의
+                <i class="fas fa-hand-point-down"></i>
+            </div>
+        </div>
+        <form class="body">
+            <div class="form-row">
+                <div class="label">이름</div>
+                <div class="form-control-box">
+                    <div class="form-control">
+                        <input type="text" name="name" maxlength="10" placeholder="이름을 입력해주세요.">
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="label">연락처</div>
+                <div class="form-control-box">
+                    <div class="form-control">
+                        <select name="tel1">
+                            <option value="010">010</option>
+                            <option value="011">011</option>
+                            <option value="012">012</option>
+                            <option value="016">016</option>
+                            <option value="017">017</option>
+                            <option value="019">019</option>
+                        </select>
+                    </div>
+                    <div class="form-control">
+                        <input type="number" name="tel1" maxlength="3" placeholder="전화번호 중간자리">
+                    </div>
+                    <div class="form-control">
+                        <input type="number" name="tel1" maxlength="3" placeholder="전화번호 뒷자리">
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="label">연락처</div>
+                <div class="form-control-box">
+                    <div class="form-control">
+                        <select name="office">
+                            <option value="">상담지점</option>
+                            <option value="둔산">둔산</option>
+                            <option value="가오">가오</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="label">관심부위</div>
+                <div class="form-control-box">
+                    <div class="form-control">
+                        <select name="part">
+                            <option value="">선택</option>
+                            <option value="눈성형">눈성형</option>
+                            <option value="코성형">코성형</option>
+                            <option value="동안성형">동안성형</option>
+                            <option value="보톡스/필러">보톡스/필러</option>
+                            <option value="피부상담">피부상담</option>
+                            <option value="체형관리">체형관리</option>
+                            <option value="레이저제모">레이저제모</option>
+                            <option value="기타">기타</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row flex-jc-e">
+                <label>
+                    <input type="checkbox">
+                    개인정보수집동의<a href="#" target="_blank">[개인정보취급방침]</a>
+                </label>
+            </div>
+            <div class="btn-ok">
+                확인
+            </div>
+        </form>
+    </div>
+
+    <!-- 탑바 시작 -->
+    <div class="top-bar flex flex-jc-sb">
+        <nav class="menu-box-1">
+            <ul class="flex height-100p">
+                <li><a href="#" class="height-100p flex flex-ai-c"><img src="./img/call_d.jpg" alt=""></a></li>
+                <li><a href="#" class="height-100p flex flex-ai-c"><img src="./img/call_d.jpg" alt=""></a></li>
+            </ul>
+        </nav>
+        <a href="#" class="logo flex flex-ai-c">
+            <img src="./img/logo.jpg" alt="">
+        </a>
+        <a href="#" class="btn-toggle-side-bar flex flex-ai-c">
+            <img src="./img/menu.jpg" alt="">
+        </a>
+    </div>
+    <!-- 탑바 끝 -->
+
+    <!-- 상단 이벤트 슬라이더 시작 -->
+    <div class="event-slider-box">
+        <div class="slider-1">
+            <div>
+                <a href="#"><img src="./img/banner_rolling_0701_01_m.jpg" alt=""></a>
+                <div class="page">
+                    둔산본점<br>
+                    피부 이벤트
+                </div>
+            </div>
+            <div>
+                <a href="#"><img src="./img/banner_rolling_0701_02_m.jpg" alt=""></a>
+                <div class="page">
+                    둔산본점<br>
+                    쁘띠/리프팅 이벤트
+                </div>
+            </div>
+            <div>
+                <a href="#"><img src="./img/banner_rolling_0701_03_m.jpg" alt=""></a>
+                <div class="page">
+                    둔산본점<br>
+                    비만/피부<br>
+                    영양주사 이벤트
+                </div>
+            </div>
+            <div>
+                <a href="#"><img src="./img/banner_rolling_0701_04_m.jpg" alt=""></a>
+                <div class="page">
+                    둔산본점<br>
+                    제모 이벤트
+                </div>
+            </div>
+            <div>
+                <a href="#"><img src="./img/banner_rolling_0601_04_m.jpg" alt=""></a>
+                <div class="page">
+                    가오점<br>
+                    이벤트
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 상단 이벤트 슬라이더 끝 -->
+
+    <!-- 배너 슬라이더 시작 -->
+    <div class="banner-slider-box">
+        <div class="slider-1">
+            <div>
+                <a href="#"><img src="./img/m_skinbn01.jpg" alt=""></a>
+            </div>
+            <div>
+                <a href="#"><img src="./img/m_skinbn02.jpg" alt=""></a>
+            </div>
+            <div>
+                <a href="#"><img src="./img/m_skinbn03.jpg" alt=""></a>
+            </div>
+            <div>
+                <a href="#"><img src="./img/m_skinbn04.jpg" alt=""></a>
+            </div>
+            <div>
+                <a href="#"><img src="./img/m_skinbn05.jpg" alt=""></a>
+            </div>
+        </div>
+    </div>
+    <!-- 배너 슬라이더 끝 -->
+
+    <!-- 정보 배너들 시작 -->
+    <div class="info-banner-box">
+        <ul class="flex flex-row-wrap">
+            <li><a href="#" class="block img-box"><img src="./img/m_bn_ars.jpg" alt=""></a></li>
+            <li><a href="#" class="block img-box"><img src="./img/m_bn_map.jpg" alt=""></a></li>
+        </ul>
+    </div>
+    <!-- 정보 배너들 끝 -->
+
+    <!-- 리얼스토리 배너 박스 시작 -->
+    <div class="real-story-banner-box">
+        <a href="#" class="img-box block"><img src="./img/real_story.jpg" alt=""></a>
+    </div>
+    <!-- 리얼스토리 배너 박스 끝 -->
+
+    <!-- 앨리스 여름 이벤트 배너 박스 시작 -->
+    <div class="summer-event-banner-box">
+        <a href="#" class="block img-box"><img src="http://m.aliceskin.com/images/common/sub_foot_banner.jpg" alt=""></a>
+    </div>
+    <!-- 앨리스 여름 이벤트 배너 박스 끝 -->
+
+    <!-- 하단 메뉴바 시작 -->
+    <div class="bottom-menu-bar">
+        <nav class="menu-box-1">
+            <ul class="flex">
+                <li class="flex-1-0-0"><a href="" class="block img-box"><img src="./img/bottom_01.jpg" alt=""></a></li>
+                <li class="flex-1-0-0"><a href="" class="block img-box"><img src="./img/bottom_02.jpg" alt=""></a></li>
+                <li class="flex-1-0-0"><a href="" class="block img-box"><img src="./img/bottom_03.jpg" alt=""></a></li>
+                <li class="flex-1-0-0"><a href="" class="block img-box"><img src="./img/bottom_04.jpg" alt=""></a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- 하단 메뉴바 끝 -->
+
+
+    <!-- 자바스크립트 불러오기 -->
+    <script src="./index.js"></script>
+</body>
+
+</html>

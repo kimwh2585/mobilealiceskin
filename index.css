@@ -1,0 +1,350 @@
+/* 커스텀 */
+
+body {
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+/* 팝업 1 시작 */
+.popup-1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.4);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.4s, visibility 0.4s;
+}
+
+.popup-1-actived .popup-1 {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup-1-actived,
+.popup-1-actived > body {
+    overflow: hidden;
+}
+
+.popup-1 > .box > .footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+.popup-1 > .box > .footer > a {
+    font-size: 13px;
+    cursor: pointer;
+}
+
+/* 팝업 1 끝 */
+
+/* 사이드바 시작 */
+.side-bar-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .4);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s, visibility 0.4s;
+    z-index: 9;
+}
+
+.side-bar-actived .side-bar-bg {
+    opacity: 1;
+    visibility: visible;
+}
+
+.side-bar {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100%;
+    transition: right 0.3s;
+    z-index: 10;
+    background-color: white;
+}
+
+.side-bar-actived .side-bar {
+    right: 0;
+}
+
+html.side-bar-actived,
+html.side-bar-actived > body {
+    overflow: hidden;
+}
+
+.side-bar > .head > .logo-bar > .logo {
+    width: 170px;
+}
+
+.side-bar > .head > .logo-bar > .btn-hide-side-bar {
+    cursor: pointer;
+}
+
+.side-bar > .head > .logo-bar > .btn-hide-side-bar > img {
+    height: 43px;
+}
+
+.side-bar > .body {
+    overflow: auto;
+}
+
+.side-bar > .body ul > li > a {
+    display: block;
+    text-align: center;
+}
+
+.side-bar > .body > ul > li > a {
+    color: #ac8059;
+    padding: 15px 0;
+    border-top: 1px solid #afafaf;
+    cursor: pointer;
+}
+
+.side-bar > .body > ul > li > a::after {
+    content: " ▼";
+    font-size: 0.7rem;
+    position: relative;
+    top: -2px;
+}
+
+.side-bar > .body > ul ul {
+    display: none;
+}
+
+.side-bar > .body > ul ul > li {
+    width: 50%;
+    background-color: #efefef;
+    border-bottom: 1px solid #afafaf;
+    border-right: 1px solid #afafaf;
+    box-sizing: border-box;
+}
+
+.side-bar > .body > ul ul > li:last-child,
+.side-bar > .body > ul ul > li:nth-last-child(2):not(:nth-child(2n)) {
+    border-bottom-width: 0;
+}
+
+.side-bar > .body > ul ul > li:first-child,
+.side-bar > .body > ul ul > li:nth-child(2) {
+    border-top: 1px solid #afafaf;
+}
+
+.side-bar > .body > ul ul > li:nth-child(2n) {
+    border-right-width: 0;
+}
+
+.side-bar > .body > ul ul > li > a {
+    padding: 10px 0;
+}
+
+/* 사이드바 끝 */
+
+/* 탑바 시작 */
+.top-bar {
+    height: 100px;
+    background-color: white;
+}
+
+.top-bar > .menu-box-1 > ul > li > a > img {
+    width: 42px;
+}
+
+.top-bar > .logo > img {
+    width: 170px;
+}
+
+.top-bar > .btn-toggle-side-bar > img {
+    width: 66px;
+}
+
+/* 탑바 끝 */
+
+/* 이벤트 슬라이더 시작 */
+.event-slider-box > .slider-1.slick-dotted.slick-slider {
+    margin: 0;
+}
+
+.event-slider-box > .slider-1 .slick-slide > a {
+    display: block;
+    width: 100%;
+}
+
+.event-slider-box > .slider-1 .slick-slide > a > img {
+    display: block;
+    width: 100%;
+}
+
+.event-slider-box > .slider-1 .slick-slide > .page {
+    display: none;
+}
+
+.event-slider-box > .slider-1 .slick-dots {
+    background-color: #555555;
+    position: static;
+    display: flex;
+    border-bottom: 3px solid #FF2A6F;
+}
+
+.event-slider-box > .slider-1 .slick-dots > li {
+    flex: 1 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+    color: white;
+    margin: 0;
+    padding: 5px 0;
+    border: 1px solid #888897;
+    word-break: keep-all;
+}
+
+.event-slider-box > .slider-1 .slick-dots > li.slick-active {
+    background-color: #FF2A6F;
+    font-weight: bold;
+    border-color: transparent;
+}
+
+/* 이벤트 슬라이더 끝 */
+
+/* 배너 슬라이더 시작 */
+.banner-slider-box > .slider-1 .slick-slide > a {
+    display: block;
+    width: 100%;
+}
+
+.banner-slider-box > .slider-1 .slick-slide > a > img {
+    width: 100%;
+    display: block;
+}
+
+.banner-slider-box > .slider-1.slick-dotted.slick-slider {
+    margin: 0;
+}
+
+.banner-slider-box > .slider-1 .slick-dots {
+    position: absolute;
+    bottom: 30px;
+    left: auto;
+    right: 25%;
+    width: auto;
+}
+
+.banner-slider-box > .slider-1 .slick-dots > li > button::before {
+    color: #f542bc;
+    font-size: 1rem;
+}
+
+/* 배너 슬라이더 끝 */
+
+/* 정보 배너들 박스 끝 */
+.info-banner-box > ul > li {
+    width: 50%;
+}
+
+@media (max-width:450px) {
+    .info-banner-box > ul > li {
+        width: 100%;
+    }
+}
+
+/* 정보 배너들 박스 시작 */
+
+/* 빠른 상담바 시작 */
+.fast-inquiry-bar {
+    position: fixed;
+    width: 100%;
+    max-width: 640px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(100%);
+    z-index: 10;
+    transition: transform 0.4s;
+    color: white;
+}
+
+.fast-inquiry-bar-actived .fast-inquiry-bar {
+    transform: translateX(-50%) translateY(0);
+}
+
+.fast-inquiry-bar > .head > .btn-toggle {
+    background-color: #555;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 30px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.fast-inquiry-bar > .head > .btn-toggle > i {
+    transform: rotate(180deg);
+    transition: transform 0.3s;
+    display: inline-block;
+}
+
+.fast-inquiry-bar-actived .fast-inquiry-bar > .head > .btn-toggle > i {
+    transform: rotate(0deg);
+}
+
+.fast-inquiry-bar > .body {
+    background-color: #171723;
+    padding-top: 20px;
+}
+
+.fast-inquiry-bar > .body > .form-row {
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 5px 0;
+}
+
+.fast-inquiry-bar > .body > .form-row > .label {
+    flex-basis: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.fast-inquiry-bar > .body > .form-row > .form-control-box {
+    flex: 1 0 0;
+    display: flex;
+}
+
+.fast-inquiry-bar > .body > .form-row > .form-control-box > .form-control {
+    flex: 1 0 0;
+}
+
+.fast-inquiry-bar > .body > .form-row > .form-control-box > .form-control > input {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.fast-inquiry-bar > .body > .form-row > .form-control-box > .form-control > select {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.fast-inquiry-bar > .body .btn-ok {
+    text-align: center;
+    padding: 10px;
+    background-color: #555;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* 빠른 상담바 끝 */
